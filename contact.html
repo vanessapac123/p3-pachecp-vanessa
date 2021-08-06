@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6NC8Q0T3S1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-6NC8Q0T3S1');
+    </script>
+
+    <title>Contact Me!</title>
+    <meta charset="utf-8">
+
+    <!--Meta tags SEO-->
+    <meta name="description" content="Vanessa Pacheco is a college student that is studying Mass Communication and Digital Strategty at the University of Florida. Check out her Portofolio for examples of the work she's completed." />
+    <meta name="keywords" content="portfolio website, public relations, marketing, digital marketing, social media marketing" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,600;1,100&display=swap" rel="stylesheet">
+
+    <!--Link to our style.css file -->
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html">Vanessa Pacheco</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container-contact">
+        <h1>Contact</h1>
+        <p>Hi there! If you would like to reach out to me about job opportunities or expertise, please contact me by utilizing this form. </p>
+
+        <form class="contact-form" id="test_form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+          <div class="first-name input-section">
+            <label for="firstname" class="label_input_wrap">Firt Name: </label>
+            <input type="text" name="req_firstname" id="firstname" placeholder="First Name"/>
+          </div>
+
+          <div class="last-name input-section">
+            <label for="lastname" class="label_input_wrap">Last Name: </label>
+            <input type="text" name="req_lastname" id="lastname" placeholder="Last Name"/>
+          </div>
+
+          <div class="email input-section">
+            <label for="email" class="label_input_wrap">Email:</label>
+            <input type="email" name="email" id="email" placeholder="jsmith@example.com"/>
+          </div>
+
+          <div class="telephone input-section">
+            <label for="telephone" class="label_input_wrap">Telephone: </label>
+            <input type="tel" name="telephone" id="telephone" placeholder="555-555-5555"/>
+          </div>
+
+          <div class="comments input-section">
+            <label for="comments" class="label_input_wrap">Comments:</label>
+            <textarea name="comments" id="comments" placeholder="Enter your message here"></textarea>
+          </div>
+
+          <div class="reset input-section">
+            <input type="reset" value="Refresh"/>
+          </div>
+
+          <div class="submit input-section">
+            <input type="submit" value="Send me a message!"/>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>Website designed by Vanessa Pacheco</p>
+    </footer>
+
+  </body>
+</html>

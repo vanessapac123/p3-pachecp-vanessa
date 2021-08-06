@@ -1,0 +1,309 @@
+/*=========================================
+
+              Universal Styling
+
+==========================================*/
+@font-face {
+  font-family: 'trailer-park-girl';
+  src: url('../fonts/trailer-park-girl.otf')format('truetype');
+}
+@font-face {
+  font-family: 'champagne_limousines';
+  src: url('../fonts/champagne_limousines/Champagne & Limousines Bold')format('truetype');
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: sans-serif;
+}
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+body {
+  background: white;
+}
+
+h1 {
+  font-size: 50px;
+  color: black;
+  font-family: 'trailer-park-girl' , sans-serif;
+}
+h2 {
+  font-size: 34px;
+  color: #F8CCE9;
+  font-family: 'champagne_limousines' , sans-serif;
+  padding-top: 20px;
+}
+p{
+  font-size: 18px;
+  color: black;
+  margin: 15px 0px;
+  line-height: 25px;
+  font-family: 'Raleway' , sans-serif;
+}
+/*=========================================
+
+                  Header
+
+==========================================*/
+h1,
+nav{
+  display: inline-block;
+}
+
+header {
+  text-align: left;
+  background: #F8CCE9;
+  padding: 10px 20px;
+}
+
+nav ul li  {
+  display: inline-block;
+}
+header h1 a{
+  text-decoration: none;
+  font-size: 50px;
+  color: black;
+  font-family: 'trailer-park-girl' , sans-serif;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 30px;
+  margin-left: 120px;
+}
+
+header nav a:hover {
+  color: #CFF5FC;
+}
+header nav a:active {
+  color: #000000;
+}
+/*=========================================
+
+           Section Title "header"
+
+==========================================*/
+section.title{
+  max-width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-image: url('../image/background-pattern.png');
+  background-repeat: repeat;
+}
+.container-title{
+  width: 35%;
+  height: 50px;
+  margin: auto;
+  border: 7px solid lightblue;
+  background-color: white;
+  padding: 5px;
+}
+/*=========================================
+
+              Index/homepage
+
+==========================================*/
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hero.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  background-color: lightgray; opacity: 90%;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+}
+.hero-text button {
+  border-radius: 3px;
+  outline: 0;
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #F8CCE9;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+.hero-text p {
+  font-size: 26px;
+  color: black;
+  line-height: 1.5em;
+  font-family: 'Raleway' , sans-serif;
+  padding: 10px;
+}
+.hero-text button:hover {
+  background-color: #CFF5FC;
+  font-weight: bold;
+  color: white;
+}
+
+.portrait-vanessa img {
+  width: 310px;
+  float: left;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 30px 10px;
+}
+
+.about-text {
+  float: left;
+  width: 650px;
+  margin: 20px 10px;
+  padding: px;
+}
+
+/*=========================================
+
+             Portfolio Page
+
+==========================================*/
+section.gallery img{
+  width: 295px;
+}
+
+section.gallery {
+  width: 900px;
+  margin: 0 auto;
+}
+
+div#push-portfolio {
+height: 150px;
+}
+/*=========================================
+
+             Resume Page
+
+==========================================*/
+.elfsight-app-2f325c6e-d03a-46db-9eaa-3d5ac2d59198{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/*=========================================
+
+                Contact Form
+
+==========================================*/
+.container-contact {
+  max-width: 900px;
+  margin: 30px auto 180px;
+  text-align: center;
+}
+
+.container-contact h1::before {
+  content: url(../image/mail.png);
+  margin: 15px;
+}
+.container-contact h1::after {
+  content: url(../image/mail.png);
+  margin: 15px;
+}
+
+.contact-form {
+  background: #CFF5FC;
+  padding: 10px 0px;
+  max-width: 500px;
+  border-radius: 4px;
+  color: black;
+  font-family: sans-serif;
+  margin: 20px auto;
+}
+.label_input_wrap {
+  display: block;
+}
+
+.reset input,
+.submit input {
+  background: #F8CCE9;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 20px;
+  display: inline;
+  margin: 15px;
+}
+.reset input:hover,
+.submit input:hover {
+  background-color: #FCDBDB;
+  font-weight: bold;
+  color: white;
+}
+.reset,
+.submit {
+  display: inline;
+}
+
+.input-section {
+  margin: 10px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 19px;
+  margin: 10px;
+}
+
+input {
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-family: sans-serif;
+  font-size: 14px
+}
+
+input::selection{
+  background: #F8CCE9;
+  color: #CFF5FC;
+}
+
+textarea {
+  font-family: sans-serif;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  width: 300px;
+}
+textarea::selection{
+  background: #F8CCE9;
+  color: black;
+}
+select {
+  width: 185px;
+  padding: 8px 0;
+  border-radius: 4px;
+}
+
+
+/*=========================================
+
+                  Footer
+
+==========================================*/
+footer p{
+  font-size: 16px;
+}
+footer{
+  background: #F8CCE9;
+  text-align: center;
+  height: 35px;
+  font-weight: bold;
+  position: fixed;
+  padding-bottom: 10px;
+  bottom: 0;
+  width: 100%;
+}
